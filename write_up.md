@@ -122,3 +122,7 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 * The ideal number of epochs was 3 on most cases as evidenced by a (local?) minima of validation error after epoch number 3
 * I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+**I also tried using *model_with_generator.py* which uses generators to train model using fit_generator() function. However, 
+I encountered what seems like a know issue where the training process just says - killed due to multiprocessing workers :(
+Fortunately, my model smoothend out wit with around 29000 samples without having to resort to generators**

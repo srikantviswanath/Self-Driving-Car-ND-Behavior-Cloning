@@ -118,7 +118,8 @@ After the collection process, I had ~29000 number of data points. I then preproc
 * Cropping out irrelevant parts of the image(50 px from top, 20 px from bottom, 0 px from sides)
 * Normalizing the cropped out images to attain zero-mean
 
-I finally randomly shuffled the data set and put 20% of the data into a validation set. FOllowing training details were observed:
+I finally randomly shuffled the data set and put 20% of the data into a validation set. Following training details were observed:
 
 * The ideal number of epochs was 3 on most cases as evidenced by a (local?) minima of validation error after epoch number 3
 * I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
